@@ -1,0 +1,7 @@
+{
+  "name": "geoZone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
