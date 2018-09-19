@@ -1,14 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Geo Zone
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div *ngIf="fenceSpace !== undefined">
+      <h3>Latitude: {{fenceSpace.lat}}</h3> <br>
+      <h3>Longitude: {{fenceSpace.long}}</h3> <br>
+      <h3>Altitude: {{fenceSpace.alt}}</h3> <br>
+  </div>
+  
+  <div>
+    <b>Distance:</b> <br>
+    <p> {{ distancesInMeters }}</p>
+  </div>
 </ion-content>
