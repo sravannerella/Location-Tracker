@@ -15,6 +15,16 @@
   
   <div>
     <b>Distance:</b> <br>
-    <p> {{ distancesInMeters }}</p>
+    <p> {{ distancesInMeters | number }} meters</p>
+  </div>
+
+  <div>
+    <b>Haversine Formula</b>
+    <p>{{ haversineDistance }}</p>
+  </div>
+
+  <div>
+    <b>Is Inside the Radius</b>
+    <p [class.text-success]="isInside">{{ isInside }}</p>
   </div>
 </ion-content>
